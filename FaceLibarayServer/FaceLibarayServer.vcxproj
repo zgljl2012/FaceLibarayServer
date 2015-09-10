@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF7B0265-1C7D-40CA-9E39-136B41983F20}</ProjectGuid>
+    <RootNamespace>FaceLibarayServer</RootNamespace>
+    <ProjectName>FaceLibraryServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>E:\OpenCV\opencv\build\x64\vc12\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>E:\OpenCV\opencv\build\include\opencv2;E:\OpenCV\opencv\build\include\opencv;E:\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
+    <ReferencePath>E:\OpenCV\opencv\build\x64\vc12\lib;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>E:\OpenCV\opencv\build\x64\vc12\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>E:\OpenCV\opencv\build\include\opencv2;E:\OpenCV\opencv\build\include\opencv;E:\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
+    <ReferencePath>E:\OpenCV\opencv\build\x64\vc12\lib;$(ReferencePath)</ReferencePath>
+    <TargetName>face</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>E:\OpenCV\opencv\build\x64\vc12\lib\opencv_calib3d248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_contrib248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_core248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_features2d248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_flann248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_gpu248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_highgui248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_imgproc248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_legacy248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ml248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_nonfree248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_objdetect248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ocl248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_photo248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_stitching248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_superres248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ts248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_video248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_videostab248d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>E:\OpenCV\opencv\build\x64\vc12\lib\opencv_calib3d248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_contrib248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_core248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_features2d248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_flann248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_gpu248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_highgui248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_imgproc248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_legacy248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ml248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_nonfree248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_objdetect248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ocl248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_photo248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_stitching248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_superres248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_ts248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_video248d.lib;E:\OpenCV\opencv\build\x64\vc12\lib\opencv_videostab248d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MyFaceRecognizer.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MyFaceRecognizer.cpp" />
+    <ClCompile Include="TestFaceRecognizer.cpp" />
+    <ClCompile Include="TestUtil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
